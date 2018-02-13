@@ -1,4 +1,4 @@
-# bootstrap4-masonry
+# Bootstrap 4 Masonry-like (Pinterest-like) Example
 
 
 >Card columns
