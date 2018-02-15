@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,453 +9,159 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <title>Bootstrap 4 Masonry-like (Pinterest-like) Example</title>
-    <style>
-.container {
-  width: 98%;
-}
-
-.logo {
-  border-radius: 50%;
-}
-
-.text-muted a {
-  color: #989898;
-}
-
-.text-muted a:hover {
-  color: grey;
-}
-
-.fa a:active, a:hover, a:visited {
-  text-decoration: none;
-}
-
-/* Tool Colors */
-.general {
-  background-color: #0095af;
-}
-
-.general .card-title {
-  color: #f3f3f3;
-}
-
-.general .card-text {
-  color: #f3f3f3;
-}
-
-.card-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.card-pin:hover .overlay {
-  opacity: .5;
-  border: 5px solid #f3f3f3;
-  transition: ease .5s;
-  background-color: #000000;  
-  cursor: zoom-in;
-}
-
-.more {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  text-transform: uppercase;
-  transform: translate(-20%, -20%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.download {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-left: 20px;
-  text-transform: uppercase;
-  transform: translate(-20%, -20%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.card-pin:hover .card-title {
-  color: #ffffff;
-  margin-top: 10px;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.card-pin:hover .more a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.card-pin:hover .download a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.social {
-	position: relative;
-	transform: translateY(-50%);
-}
-
-.social .fa {
-  margin: 0 3px;
-}    
-    </style>
+    <title>Bootstrap 4 Masonry (Pinterest Style) Layout Example</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <h4 class="text-uppercase font-weight-bold title">Masonry-Like Pinterest-Like Layout with Bootstrap 4</h4>
-        </div>
-        <div class="row">
-            <div class="card-columns">
+        <div class="card-columns">
+           
                 <div class="card">
+                    <div class="card-header">
+                        Card Header
+                    </div>
+                    <img class="card-img-top" src="https://source.unsplash.com/daily" alt="Card image top">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-9 col-xs-9">
-                                <h2 class="card-title">Card Name</h2>
-                            </div>
-                            <div class="col-sm-3 col-xs-3">
-                                <img class="img-fluid" src="http://placehold.it/50x50?text=LOGO">
-                            </div>
-                            <div class="col-sm-12">
-                                <small class="text-muted">
-                                    <a href="#!">
-                                        <strong>techiediaries.com</strong>
-                                    </a>
-                                </small>
-                            </div>
-                        </div>
-                        <p class="card-text">This is test text, test text
-                        test text  test text test text test text test text
-                        test text test text test text test text test text test 
-                        text test text test text test text test text</p>
-                        <p class="card-text text-right">
-                            <small class="text-muted">
-                                <span class="social">
-                                    <a href="#!">
-                                        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#!">
-                                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#!">
-                                        <i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#!">
-                                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </small>
-                        </p>
+                        <h3 class="card-title">Each Card body can have a title</h3>
+                        <h4 class="card-subtitle">And a subtitle</h4>
+                        <p class="card-text">This is a card body 1</p>
+                    </div>
+
+
+                    <div class="card-body">
+                        <h3 class="card-title">Card body 2 title</h3>
+                        <h4 class="card-subtitle">And subtitle</h4>
+                        <p class="card-text">You can also add a second body or even more</p>
+                    </div>
+                    <img class="card-img-bottom" src="https://source.unsplash.com/daily" alt="Card image bottom">
+                    <div class="card-footer">
+                        Card Footer
                     </div>
                 </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily?nature" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
+          
+          
+                <div class="card">
+
+                    <img class="card-img-top" src="https://source.unsplash.com/daily?nature" alt="Card image top">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Card title</h3>
+                        <h4 class="card-subtitle">Card subtitle</h4>
+                        <p class="card-text">You can use the cap image as an overlay for the body</p>
                     </div>
                 </div>
-                <div class="card card-pin">
-                    <img class="card-img" src=http://source.unsplash.com/daily?water" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
+
+                <div class="card">
+
+                    <img class="card-img-top" src="https://source.unsplash.com/daily?rock" alt="Card image top">
+                    <div class="card-img-overlay white">
+                        <h3 class="card-title">Card title</h3>
+                        <h4 class="card-subtitle">Card subtitle</h4>
+                        <p class="card-text">You can add links to card body</p>
+                        <a href="#" class="card-link">Link 1</a>
+                        <a href="#" class="card-link">Link 2</a>
                     </div>
                 </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily?dog" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
+    
+                <div class="card  card-primary p-3 text-center">
+                    <ul class="list-group">
+                        <li class="list-group-item">Item 1</li>
+                        <li class="list-group-item">Item 2</li>
+                        <li class="list-group-item">Item 3</li>
+                    </ul>
+
+                </div>
+
+                <div class="card text-white border-danger bg-danger p-1 text-center">
+
+                    <div class="card-body">
+                        <h2 class="card-title"> My Card</h2>
+                        <p class="card-text"> This is a simple centered text </p>
+                    </div>
+
+                </div>
+ 
+                <div class="card text-primary border-primary">
+
+                    <div class="card-body">
+                        <h2 class="card-title"> My List</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Item 1</li>
+                            <li class="list-group-item">Item 2</li>
+                            <li class="list-group-item">Item 3</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="card border-danger text-primary">
+                    <img class="card-img-top" src="https://source.unsplash.com/daily?rock" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Card text</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item 1</li>
+                        <li class="list-group-item">Item 2</li>
+                        <li class="list-group-item">Item 3</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link 1</a>
+                        <a href="#" class="card-link">Link 2</a>
                     </div>
                 </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily"
-                        alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
+            
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Tab 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tab 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tab 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="card-img-top" src="https://source.unsplash.com/daily?rock" alt="Card image top">
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <h4 class="card-subtitle">Card subtitle</h4>
+                        <p class="card-text">You can add navigation (navigation and pills) to card header</p>
                     </div>
                 </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily?cat?1600x900" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav  nav-pills card-header-pill">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Pill 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pill 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pill 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="card-img-top" src="https://source.unsplash.com/daily?wood" alt="Card image top">
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <h4 class="card-subtitle">Card subtitle</h4>
+                        <p class="card-text">You can add navigation (navigation and pills) to card header</p>
                     </div>
                 </div>
-                <div class="card text-center bg-primary">
-                        <div class="card-block">
-                          <h4 class="card-title">Card title</h4>
-                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                </div>         
-                  
-                <div class="card card-pin h-70">
-                    <img class="card-img h-70" src="http://source.unsplash.com/daily?rock?400x700" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
+
+                <div class="card text-white bg-dark mt-5">
+                    <div class="card-header">This is a Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a text </p>
                     </div>
                 </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily"
-                        alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily"
-                        alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily"
-                        alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily"
-                        alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/320/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-pin">
-                    <img class="card-img" src="http://source.unsplash.com/daily" alt="Card image">
-                    <div class="overlay">
-                        <h3 class="card-title title">Some Title</h3>
-                        <div class="download">
-                            <a href="http://lorempixel.com/486/322/" download>
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="more">
-                            <a href="#!">
-                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
     </div>
